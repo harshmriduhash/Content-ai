@@ -1,10 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Header } from '@/components/layout/header';
-import { HomePage } from '@/pages/home';
-import { WritePage } from '@/pages/write';
-import { ImagesPage } from '@/pages/images';
-import { VideosPage } from '@/pages/videos';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Header } from "@/components/layout/header";
+import { HomePage } from "@/pages/home";
+import { WritePage } from "@/pages/write";
+import { ImagesPage } from "@/pages/images";
+import { VideosPage } from "@/pages/videos";
 
 export default function App() {
   return (
