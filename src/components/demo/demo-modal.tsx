@@ -1,6 +1,6 @@
-import React from 'react';
-import { X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import React from "react";
+import { X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface DemoModalProps {
   isOpen: boolean;
@@ -34,7 +34,9 @@ export function DemoModal({ isOpen, onClose }: DemoModalProps) {
             </video>
           </div>
           <div className="mt-4 text-gray-400">
-            <p>Learn how to use our AI-powered tools to create amazing content:</p>
+            <p>
+              Learn how to use our AI-powered tools to create amazing content:
+            </p>
             <ul className="list-disc list-inside mt-2">
               <li>Generate engaging written content</li>
               <li>Create stunning AI-generated images</li>
