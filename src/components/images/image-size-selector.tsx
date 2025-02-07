@@ -1,12 +1,12 @@
-import React from 'react';
-import { Select } from '@/components/ui/select';
+import React from "react";
+import { Select } from "@/components/ui/select";
 
 const imageSizes = [
-  { value: '256x256', label: 'Small (256x256)' },
-  { value: '512x512', label: 'Medium (512x512)' },
-  { value: '1024x1024', label: 'Large (1024x1024)' },
-  { value: '1024x1792', label: 'Portrait (1024x1792)' },
-  { value: '1792x1024', label: 'Landscape (1792x1024)' },
+  { value: "256x256", label: "Small (256x256)" },
+  { value: "512x512", label: "Medium (512x512)" },
+  { value: "1024x1024", label: "Large (1024x1024)" },
+  { value: "1024x1792", label: "Portrait (1024x1792)" },
+  { value: "1792x1024", label: "Landscape (1792x1024)" },
 ];
 
 interface ImageSizeSelectorProps {
