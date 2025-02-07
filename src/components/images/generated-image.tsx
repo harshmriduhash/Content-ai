@@ -1,6 +1,6 @@
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Download, RotateCw } from 'lucide-react';
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Download, RotateCw } from "lucide-react";
 
 interface GeneratedImageProps {
   imageUrl: string;
@@ -8,13 +8,17 @@ interface GeneratedImageProps {
   onRegenerate: () => void;
 }
 
-export function GeneratedImage({ imageUrl, isLoading, onRegenerate }: GeneratedImageProps) {
+export function GeneratedImage({
+  imageUrl,
+  isLoading,
+  onRegenerate,
+}: GeneratedImageProps) {
   const [loadError, setLoadError] = React.useState(false);
 
   const handleDownload = () => {
-    const link = document.createElement('a');
+    const link = document.createElement("a");
     link.href = imageUrl;
-    link.download = 'generated-image.jpg';
+    link.download = "generated-image.jpg";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -49,7 +53,7 @@ export function GeneratedImage({ imageUrl, isLoading, onRegenerate }: GeneratedI
           </Button>
         </div>
       </div>
-      
+
       <div className="relative aspect-square rounded-lg border bg-gray-50 overflow-hidden">
         {isLoading ? (
           <div className="absolute inset-0 flex items-center justify-center">
@@ -64,9 +68,9 @@ export function GeneratedImage({ imageUrl, isLoading, onRegenerate }: GeneratedI
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-center p-4">
-            {loadError ? 
-              "Failed to load the image. Please try regenerating." : 
-              "Your generated image will appear here"}
+            {loadError
+              ? "Failed to load the image. Please try regenerating."
+              : "Your generated image will appear here"}
           </div>
         )}
       </div>
